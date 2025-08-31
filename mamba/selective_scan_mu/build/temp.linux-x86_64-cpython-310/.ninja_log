@@ -1,0 +1,6 @@
+# ninja log v5
+0	30662	1716396471931954506	/home/ubuntu/ZYY/ME/GAN-Transformer for HSI and LiDAR/mamba/selective_scan/build/temp.linux-x86_64-cpython-310/csrc/selective_scan/selective_scan.o	a4ca56af75099217
+2	36280	1716396477528339163	/home/ubuntu/ZYY/ME/GAN-Transformer for HSI and LiDAR/mamba/selective_scan/build/temp.linux-x86_64-cpython-310/csrc/selective_scan/selective_scan_core_fwd2.o	ecde6a37a824952f
+2	47873	1716396489121123003	/home/ubuntu/ZYY/ME/GAN-Transformer for HSI and LiDAR/mamba/selective_scan/build/temp.linux-x86_64-cpython-310/csrc/selective_scan/selective_scan_core_fwd3.o	269cf63eea5caf7b
+3	61192	1716396502418000882	/home/ubuntu/ZYY/ME/GAN-Transformer for HSI and LiDAR/mamba/selective_scan/build/temp.linux-x86_64-cpython-310/csrc/selective_scan/selective_scan_core_fwd4.o	a34e4d9bd1db5538
+1	91001	1716396532239890435	/home/ubuntu/ZYY/ME/GAN-Transformer for HSI and LiDAR/mamba/selective_scan/build/temp.linux-x86_64-cpython-310/csrc/selective_scan/selective_scan_core.o	b8b646556c239395
