@@ -1,4 +1,4 @@
-## INNFUS E-Mamba
+## INFFUS E-Mamba
 This is the official implementation for the paper "E-Mamba: Efficient Mamba network for hyperspectral and LiDAR joint classification", published in Information Fusion, 2026.
 ![E-Mamba](https://github.com/zhangyiyan001/E-Mamba/blob/master/framework.png)
 ****
