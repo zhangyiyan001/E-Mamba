@@ -30,17 +30,17 @@ You can run the model on different datasets using the following commands:
 
 **For the Houston Dataset:**
 ```shell
-python main.py --dataset Houston --window_size 9 --lr 0.0003 --gpu 0
+python main.py --dataset Houston --window_size 9 --gpu 0
 ```
 
 **For the Trento Dataset:**
 ```shell
-python main.py --dataset Trento --window_size 9 --lr 0.0001 --gpu 0
+python main.py --dataset Trento --window_size 9 --gpu 0
 ```
 
 **For the MUUFL Dataset:**
 ```shell
-python main.py --dataset MUUFL --window_size 7 --lr 0.0001 --gpu 0
+python main.py --dataset MUUFL --window_size 7 --gpu 0
 ```
 
 ## Citation
