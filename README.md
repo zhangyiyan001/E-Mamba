@@ -21,15 +21,8 @@ We have successfully tested the environment only on Linux. Please ensure you hav
 
 3.  **Install Mamba:**
     ```shell
-    cd mamba/selective_scan && pip install . && cd ../../
+    cd mamba/selective_scan_mu && pip install . && cd ../../
     ```
-
-## Dataset
-
-The datasets used in this project can be downloaded from Baidu Netdisk.
-
-Link: https://pan.baidu.com/s/12bPrqTl3Iqbfs7jgd5fgqA
-Extraction Code: k95x
 
 ## Usage
 
