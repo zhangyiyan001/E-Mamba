@@ -108,6 +108,7 @@ def parse_args():
     parser.add_argument('--epochs', type=int, default=300)
     parser.add_argument('--seed', type=int, default=100)
     parser.add_argument('--window_size', type=int, default=7)
+    
     return parser.parse_args()
 
 # 解析命令行参数
@@ -123,9 +124,9 @@ dataset = args.dataset
 
 # 数据集配置字典
 dataset_configs = {
-    'Houston': {'l1': 144, 'l2': 1, 'num_classes': 15},
-    'Trento': {'l1': 63, 'l2': 1, 'num_classes': 6},
-    'MUUFL': {'l1': 64, 'l2': 2, 'num_classes': 11}
+    'Houston': {'l1': 144, 'l2': 1, 'num_classes': 15, 'learning_rate': 0.0003},
+    'Trento': {'l1': 63, 'l2': 1, 'num_classes': 6, 'learning_rate': 0.0001},
+    'MUUFL': {'l1': 64, 'l2': 2, 'num_classes': 11, 'learning_rate': 0.0001}
 }
 
 print(f'使用数据集: {dataset}')
@@ -162,7 +163,7 @@ net = MultimodalClassier(l1=config['l1'],
                          num_classes=config['num_classes']).to(device)
 
 
-optimizer = optim.AdamW(net.parameters(), lr=0.001, weight_decay=0.0001)
+optimizer = optim.AdamW(net.parameters(), lr=config['learning_rate'], weight_decay=0.0001)
 criterion = nn.CrossEntropyLoss().to(device)
 lr_adjust = torch.optim.lr_scheduler.StepLR(optimizer=optimizer, step_size=30, gamma=0.5, last_epoch=-1)
 
